@@ -26,7 +26,7 @@ int main(void){
 
             break ;
         case 2 :
-            printf("请输入ap的ch:");
+            printf("请输入ap的mac:");
             scanf("%d",&ch);
             printf("无线频道干扰中，Ctrl+C停止");
             sprintf(tmp,"sudo mdk3 %s a -a %d",networkcardname,ch);
