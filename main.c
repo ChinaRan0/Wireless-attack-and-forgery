@@ -31,6 +31,7 @@ int main(void){
             scanf("%d",&mac);
             printf("无线频道干扰中，Ctrl+C停止");
             sprintf(tmp,"sudo mdk3 %s a -a %d",networkcardname,mac);
+            system(tmp);
             break;
         case 0 :
             system("sudo airmon-ng stop wlan0mon >> /dev/null ");
